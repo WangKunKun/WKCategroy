@@ -12,6 +12,18 @@
 static NSString * layerName = @"WKCornerRadiusLayer";
 @implementation UIButton (AddCornerRadiusLayer)
 
+- (void)setWkCRLayerArea:(WKBtnCRLayerArea)wkCRLayerArea
+{
+    objc_setAssociatedObject(self, @"wkCRLayerArea", @(wkCRLayerArea), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (WKBtnCRLayerArea)wkCRLayerArea
+{
+    NSNumber * number = objc_getAssociatedObject(self, @"wkCRLayerArea");
+    NSUInteger style = number ? [number unsignedIntegerValue] : 0;
+    return style;
+}
+
 - (void)setWkBGColor:(UIColor *)wkBGColor
 {
     objc_setAssociatedObject(self, @"wkBGColor", wkBGColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -84,10 +96,12 @@ static NSString * layerName = @"WKCornerRadiusLayer";
     CALayer * thisLayer = [self getCornerRadiusLayer];
     if (self.isAddCornerRadiusLayer) {
         CGRect titleLabelFrame = [self convertRect:self.titleLabel.frame toView:self];
-        CGFloat layerWidth = titleLabelFrame.size.width;
-        CGFloat layerHeight = titleLabelFrame.size.height;
+        CGRect imageViewFrame = [self convertRect:self.imageView.frame toView:self];
+        CGRect contentFrame = self.wkCRLayerArea == WKBtnCRLayerArea_JustLabel ? titleLabelFrame : (self.wkCRLayerArea == WKBtnCRLayerArea_JustImageView ? imageViewFrame : CGRectUnion(titleLabelFrame, imageViewFrame));
         
         
+        CGFloat layerWidth = contentFrame.size.width;
+        CGFloat layerHeight = contentFrame.size.height;
         if (layerWidth == 0 || layerHeight == 0) {
             return;
         }
@@ -112,13 +126,13 @@ static NSString * layerName = @"WKCornerRadiusLayer";
             
             //WKFIX 超出btn范围的处理
             if (width > 0 && height > 0) {
-                CGFloat offset = layerWidth + titleLabelFrame.origin.x - self.frame.size.width;
+                CGFloat offset = layerWidth + contentFrame.origin.x - self.frame.size.width;
                 if (offset > 0) {
                     
                 }
             }
             
-            layer.center = CGPointMake(titleLabelFrame.origin.x + titleLabelFrame.size.width / 2.0, titleLabelFrame.origin.y + titleLabelFrame.size.height/2.0);
+            layer.center = CGPointMake(contentFrame.origin.x + contentFrame.size.width / 2.0, contentFrame.origin.y + contentFrame.size.height/2.0);
             layer.bounds = CGRectMake(0, 0, layerWidth,layerHeight);
             CATransition * t = [CATransition new];
             t.type = kCATransitionFade;
@@ -127,7 +141,7 @@ static NSString * layerName = @"WKCornerRadiusLayer";
         }
         else
         {
-            thisLayer.center = CGPointMake(titleLabelFrame.origin.x + titleLabelFrame.size.width / 2.0, titleLabelFrame.origin.y + titleLabelFrame.size.height/2.0);
+            thisLayer.center = CGPointMake(contentFrame.origin.x + contentFrame.size.width / 2.0, contentFrame.origin.y + contentFrame.size.height/2.0);
             thisLayer.bounds = CGRectMake(0, 0, layerWidth,layerHeight);
         }
     }
