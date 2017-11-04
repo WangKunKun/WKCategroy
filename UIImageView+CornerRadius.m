@@ -8,13 +8,12 @@
 
 #import "UIImageView+CornerRadius.h"
 #import <objc/runtime.h>
-
+#import "UIImage+Tint.h"
 
 @interface UIImageView ()
 
-@property (nonatomic, strong) CALayer * wkMaskLayer;
+@property (nonatomic, strong) CAShapeLayer * wkMaskLayer;
 @property (nonatomic, strong) CAShapeLayer * wkBorderLayer;
-
 
 @end
 
@@ -50,36 +49,15 @@
 - (void)zy_LayoutSubviews {
     [self zy_LayoutSubviews];
     if (self.zy_isHeaderIV) {
-
+        [self wkLayerInit];
+        self.wkBorderLayer.fillColor = HexColor(@"d9d9d9").CGColor;
+    }
+    else if (self.zy_isVipHeaderIV)
+    {
+        [self wkLayerInit];
+        self.wkBorderLayer.fillColor = HexColor(@"ffc323").CGColor;
+        //添加
         
-        if (!self.wkMaskLayer) {
-            self.wkMaskLayer = [CALayer layer];
-            self.wkMaskLayer.frame = self.bounds;
-            self.wkMaskLayer.cornerRadius = self.width / 2.0;
-            self.wkMaskLayer.backgroundColor = [UIColor whiteColor].CGColor;
-            self.wkMaskLayer.name = @"wkMaskLayer";
-        }
-
-        if (!self.wkBorderLayer) {
-            self.wkBorderLayer = [CAShapeLayer layer];
-            UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.width/2.0];
-            
-            CGRect aaa = CGRectMake(0.5, 0.5, self.width - 1, self.height - 1);
-            UIBezierPath * pathTwo = [UIBezierPath bezierPathWithRoundedRect:aaa cornerRadius:self.width/2.0 - 0.5];
-            [path appendPath:pathTwo];
-            self.wkBorderLayer.path = path.CGPath;
-            self.wkBorderLayer.fillColor = HexColor(@"d9d9d9").CGColor;
-            self.wkBorderLayer.fillRule = kCAFillRuleEvenOdd;
-
-        }
-
-        [self.layer addSublayer:self.wkBorderLayer];
-        self.layer.mask = self.wkMaskLayer;
-
-//        self.layer.cornerRadius = self.width / 2.0;
-//        self.clipsToBounds = YES;
-//        self.layer.borderColor = HexColor(@"d9d9d9").CGColor;
-//        self.layer.borderWidth = 0.5;
     }
     else
     {
@@ -89,12 +67,6 @@
         if (self.wkBorderLayer) {
             [self.wkBorderLayer removeFromSuperlayer];
         }
-//        if (self.layer.cornerRadius == self.width / 2.0)
-//        {
-//            self.layer.cornerRadius = 0;
-//            self.layer.borderWidth = 0;
-//
-//        }
     }
 }
 
@@ -104,9 +76,45 @@
 }
 
 
+- (void)wkLayerInit
+{
+    
+    if (!self.wkMaskLayer) {
+        self.wkMaskLayer = [CAShapeLayer layer];
+        
+        self.wkMaskLayer.backgroundColor = [UIColor whiteColor].CGColor;
+        self.wkMaskLayer.name = @"wkMaskLayer";
+        self.layer.mask = self.wkMaskLayer;
+    }
+    
+    if (!self.wkBorderLayer) {
+        self.wkBorderLayer = [CAShapeLayer layer];
+        self.wkBorderLayer.fillRule = kCAFillRuleEvenOdd;
+        [self.layer addSublayer:self.wkBorderLayer];
+    }
+    
+
+    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.width/2.0];
+    self.wkMaskLayer.path = maskPath.CGPath;
+
+    
+
+    UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.width/2.0];
+    CGRect aaa = CGRectMake(self.zyBorderWidth, self.zyBorderWidth, self.width - self.zyBorderWidth * 2, self.height - self.zyBorderWidth * 2);
+    UIBezierPath * pathTwo = [UIBezierPath bezierPathWithRoundedRect:aaa cornerRadius:self.width/2.0 - self.zyBorderWidth];
+    [path appendPath:pathTwo];
+    self.wkBorderLayer.path = path.CGPath;
+    
+
+
+    
+    
+}
+
 #pragma mark property
 - (CGFloat)zyBorderWidth {
-    return [objc_getAssociatedObject(self, _cmd) floatValue];
+    NSNumber * number = objc_getAssociatedObject(self, _cmd);
+    return number ? [number unsignedIntegerValue] : 0.5;
 }
 
 - (void)setZyBorderWidth:(CGFloat)zyBorderWidth {
@@ -125,7 +133,8 @@
 
 
 - (CGFloat)zyRadius {
-    return [objc_getAssociatedObject(self, _cmd) floatValue];
+    NSNumber * number = objc_getAssociatedObject(self, _cmd);
+    return number ? [number unsignedIntegerValue] : self.width / 2.0;
 }
 
 - (void)setZyRadius:(CGFloat)zyRadius {
@@ -143,17 +152,27 @@
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
+- (void)setZy_isVipHeaderIV:(BOOL)zy_isVipHeaderIV
+{
+    
+    objc_setAssociatedObject(self, @selector(zy_isVipHeaderIV), @(zy_isVipHeaderIV), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BOOL)zy_isVipHeaderIV
+{
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
+}
 
 
 
 
-- (void)setWkMaskLayer:(CALayer *)wkMaskLayer
+- (void)setWkMaskLayer:(CAShapeLayer *)wkMaskLayer
 {
     objc_setAssociatedObject(self, @selector(wkMaskLayer), wkMaskLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
 }
 
-- (CALayer *)wkMaskLayer
+- (CAShapeLayer *)wkMaskLayer
 {
     return objc_getAssociatedObject(self, _cmd);
 }
@@ -167,6 +186,9 @@
 {
     return objc_getAssociatedObject(self, _cmd);
 }
+
+
+
 
 @end
 

@@ -16,10 +16,10 @@
  判断是否是headiv 自带边框 和 圆角
  */
 @property (nonatomic, assign) BOOL zy_isHeaderIV;
+@property (nonatomic, assign) BOOL zy_isVipHeaderIV;
 
 @property (assign, nonatomic) CGFloat   zyRadius;
 @property (assign, nonatomic) CGFloat   zyBorderWidth;
 @property (strong, nonatomic) UIColor * zyBorderColor;
-
 
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "UIButton+WKTouchDown.h"
+#import <objc/runtime.h>
+
+
 
 @interface UIButton ()
 
@@ -27,7 +30,7 @@
 - (UIColor *)touchDownBGColor
 {
     UIColor * color = objc_getAssociatedObject(self, @"touchDownBGColor");
-    return color ?: mainColor;
+    return color ?: RGBCOLOR(224, 117, 102);
 }
 
 - (void)setTmpBGColor:(UIColor *)tmpBGColor

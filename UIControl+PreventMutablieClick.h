@@ -10,8 +10,11 @@
 
 @interface UIControl (PreventMutablieClick)
 
+//只需要使用这两个属性
 @property (nonatomic, assign) NSTimeInterval wk_acceptEventInterval;//添加点击事件的间隔时间 无效时间
-@property (nonatomic, assign) NSTimeInterval wk_acceptEventTime;//上一次点击响应的时间
 @property (nonatomic, assign) BOOL wk_ignoreEvent;//是否需要忽略快速点击事件   几秒内无效
+
+
+@property (nonatomic, assign) NSTimeInterval wk_acceptEventTime;//上一次点击响应的时间
 
 @end

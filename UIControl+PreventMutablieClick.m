@@ -7,7 +7,7 @@
 //
 
 #import "UIControl+PreventMutablieClick.h"
-
+#import <objc/runtime.h>
 @implementation UIControl (PreventMutablieClick)
 
 static const char *UIControl_acceptEventInterval = "UIControl_acceptEventInterval";

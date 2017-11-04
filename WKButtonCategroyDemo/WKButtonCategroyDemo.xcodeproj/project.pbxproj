@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA5D04CF1FAAC66F00E31639 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D04CE1FAAC66F00E31639 /* main.m */; };
+		EA5D04D21FAAC66F00E31639 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D04D11FAAC66F00E31639 /* AppDelegate.m */; };
+		EA5D04D51FAAC66F00E31639 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D04D41FAAC66F00E31639 /* ViewController.m */; };
+		EA5D04D81FAAC66F00E31639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5D04D61FAAC66F00E31639 /* Main.storyboard */; };
+		EA5D04DA1FAAC66F00E31639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5D04D91FAAC66F00E31639 /* Assets.xcassets */; };
+		EA5D04DD1FAAC66F00E31639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5D04DB1FAAC66F00E31639 /* LaunchScreen.storyboard */; };
+		EA5D04E81FAAC66F00E31639 /* WKButtonCategroyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D04E71FAAC66F00E31639 /* WKButtonCategroyDemoTests.m */; };
+		EA5D04F31FAAC66F00E31639 /* WKButtonCategroyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D04F21FAAC66F00E31639 /* WKButtonCategroyDemoUITests.m */; };
+		EA5D05081FAAC6A400E31639 /* UIButton+WKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D05011FAAC6A400E31639 /* UIButton+WKPattern.m */; };
+		EA5D05091FAAC6A400E31639 /* UIButton+WKTouchDown.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D05031FAAC6A400E31639 /* UIButton+WKTouchDown.m */; };
+		EA5D050A1FAAC6A400E31639 /* UIControl+PreventMutablieClick.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D05051FAAC6A400E31639 /* UIControl+PreventMutablieClick.m */; };
+		EA5D050B1FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D05071FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.m */; };
+		EA5D050E1FAAF7E600E31639 /* 7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5D050C1FAAF7E600E31639 /* 7@2x.png */; };
+		EA5D050F1FAAF7E600E31639 /* 7@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5D050D1FAAF7E600E31639 /* 7@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA5D04E41FAAC66F00E31639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5D04C21FAAC66F00E31639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5D04C91FAAC66F00E31639;
+			remoteInfo = WKButtonCategroyDemo;
+		};
+		EA5D04EF1FAAC66F00E31639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5D04C21FAAC66F00E31639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5D04C91FAAC66F00E31639;
+			remoteInfo = WKButtonCategroyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA5D04CA1FAAC66F00E31639 /* WKButtonCategroyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKButtonCategroyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5D04CE1FAAC66F00E31639 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA5D04D01FAAC66F00E31639 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA5D04D11FAAC66F00E31639 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA5D04D31FAAC66F00E31639 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA5D04D41FAAC66F00E31639 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA5D04D71FAAC66F00E31639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA5D04D91FAAC66F00E31639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA5D04DC1FAAC66F00E31639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA5D04DE1FAAC66F00E31639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5D04E31FAAC66F00E31639 /* WKButtonCategroyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKButtonCategroyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5D04E71FAAC66F00E31639 /* WKButtonCategroyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKButtonCategroyDemoTests.m; sourceTree = "<group>"; };
+		EA5D04E91FAAC66F00E31639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5D04EE1FAAC66F00E31639 /* WKButtonCategroyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKButtonCategroyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5D04F21FAAC66F00E31639 /* WKButtonCategroyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKButtonCategroyDemoUITests.m; sourceTree = "<group>"; };
+		EA5D04F41FAAC66F00E31639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5D05001FAAC6A400E31639 /* UIButton+WKPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+WKPattern.h"; path = "../../UIButton+WKPattern.h"; sourceTree = "<group>"; };
+		EA5D05011FAAC6A400E31639 /* UIButton+WKPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WKPattern.m"; path = "../../UIButton+WKPattern.m"; sourceTree = "<group>"; };
+		EA5D05021FAAC6A400E31639 /* UIButton+WKTouchDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+WKTouchDown.h"; path = "../../UIButton+WKTouchDown.h"; sourceTree = "<group>"; };
+		EA5D05031FAAC6A400E31639 /* UIButton+WKTouchDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WKTouchDown.m"; path = "../../UIButton+WKTouchDown.m"; sourceTree = "<group>"; };
+		EA5D05041FAAC6A400E31639 /* UIControl+PreventMutablieClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+PreventMutablieClick.h"; path = "../../UIControl+PreventMutablieClick.h"; sourceTree = "<group>"; };
+		EA5D05051FAAC6A400E31639 /* UIControl+PreventMutablieClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+PreventMutablieClick.m"; path = "../../UIControl+PreventMutablieClick.m"; sourceTree = "<group>"; };
+		EA5D05061FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+AddCornerRadiusLayer.h"; path = "../../UIButton+AddCornerRadiusLayer.h"; sourceTree = "<group>"; };
+		EA5D05071FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AddCornerRadiusLayer.m"; path = "../../UIButton+AddCornerRadiusLayer.m"; sourceTree = "<group>"; };
+		EA5D050C1FAAF7E600E31639 /* 7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7@2x.png"; sourceTree = "<group>"; };
+		EA5D050D1FAAF7E600E31639 /* 7@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5D04C71FAAC66F00E31639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D04E01FAAC66F00E31639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D04EB1FAAC66F00E31639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA5D04C11FAAC66F00E31639 = {
+			isa = PBXGroup;
+			children = (
+				EA5D04CC1FAAC66F00E31639 /* WKButtonCategroyDemo */,
+				EA5D04E61FAAC66F00E31639 /* WKButtonCategroyDemoTests */,
+				EA5D04F11FAAC66F00E31639 /* WKButtonCategroyDemoUITests */,
+				EA5D04CB1FAAC66F00E31639 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA5D04CB1FAAC66F00E31639 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D04CA1FAAC66F00E31639 /* WKButtonCategroyDemo.app */,
+				EA5D04E31FAAC66F00E31639 /* WKButtonCategroyDemoTests.xctest */,
+				EA5D04EE1FAAC66F00E31639 /* WKButtonCategroyDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5D04CC1FAAC66F00E31639 /* WKButtonCategroyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D050C1FAAF7E600E31639 /* 7@2x.png */,
+				EA5D050D1FAAF7E600E31639 /* 7@3x.png */,
+				EA5D04D01FAAC66F00E31639 /* AppDelegate.h */,
+				EA5D04D11FAAC66F00E31639 /* AppDelegate.m */,
+				EA5D04D31FAAC66F00E31639 /* ViewController.h */,
+				EA5D04D41FAAC66F00E31639 /* ViewController.m */,
+				EA5D05001FAAC6A400E31639 /* UIButton+WKPattern.h */,
+				EA5D05011FAAC6A400E31639 /* UIButton+WKPattern.m */,
+				EA5D05021FAAC6A400E31639 /* UIButton+WKTouchDown.h */,
+				EA5D05031FAAC6A400E31639 /* UIButton+WKTouchDown.m */,
+				EA5D05041FAAC6A400E31639 /* UIControl+PreventMutablieClick.h */,
+				EA5D05051FAAC6A400E31639 /* UIControl+PreventMutablieClick.m */,
+				EA5D05061FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.h */,
+				EA5D05071FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.m */,
+				EA5D04D61FAAC66F00E31639 /* Main.storyboard */,
+				EA5D04D91FAAC66F00E31639 /* Assets.xcassets */,
+				EA5D04DB1FAAC66F00E31639 /* LaunchScreen.storyboard */,
+				EA5D04DE1FAAC66F00E31639 /* Info.plist */,
+				EA5D04CD1FAAC66F00E31639 /* Supporting Files */,
+			);
+			path = WKButtonCategroyDemo;
+			sourceTree = "<group>";
+		};
+		EA5D04CD1FAAC66F00E31639 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D04CE1FAAC66F00E31639 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA5D04E61FAAC66F00E31639 /* WKButtonCategroyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D04E71FAAC66F00E31639 /* WKButtonCategroyDemoTests.m */,
+				EA5D04E91FAAC66F00E31639 /* Info.plist */,
+			);
+			path = WKButtonCategroyDemoTests;
+			sourceTree = "<group>";
+		};
+		EA5D04F11FAAC66F00E31639 /* WKButtonCategroyDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D04F21FAAC66F00E31639 /* WKButtonCategroyDemoUITests.m */,
+				EA5D04F41FAAC66F00E31639 /* Info.plist */,
+			);
+			path = WKButtonCategroyDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA5D04C91FAAC66F00E31639 /* WKButtonCategroyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5D04F71FAAC66F00E31639 /* Build configuration list for PBXNativeTarget "WKButtonCategroyDemo" */;
+			buildPhases = (
+				EA5D04C61FAAC66F00E31639 /* Sources */,
+				EA5D04C71FAAC66F00E31639 /* Frameworks */,
+				EA5D04C81FAAC66F00E31639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKButtonCategroyDemo;
+			productName = WKButtonCategroyDemo;
+			productReference = EA5D04CA1FAAC66F00E31639 /* WKButtonCategroyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA5D04E21FAAC66F00E31639 /* WKButtonCategroyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5D04FA1FAAC66F00E31639 /* Build configuration list for PBXNativeTarget "WKButtonCategroyDemoTests" */;
+			buildPhases = (
+				EA5D04DF1FAAC66F00E31639 /* Sources */,
+				EA5D04E01FAAC66F00E31639 /* Frameworks */,
+				EA5D04E11FAAC66F00E31639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5D04E51FAAC66F00E31639 /* PBXTargetDependency */,
+			);
+			name = WKButtonCategroyDemoTests;
+			productName = WKButtonCategroyDemoTests;
+			productReference = EA5D04E31FAAC66F00E31639 /* WKButtonCategroyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA5D04ED1FAAC66F00E31639 /* WKButtonCategroyDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5D04FD1FAAC66F00E31639 /* Build configuration list for PBXNativeTarget "WKButtonCategroyDemoUITests" */;
+			buildPhases = (
+				EA5D04EA1FAAC66F00E31639 /* Sources */,
+				EA5D04EB1FAAC66F00E31639 /* Frameworks */,
+				EA5D04EC1FAAC66F00E31639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5D04F01FAAC66F00E31639 /* PBXTargetDependency */,
+			);
+			name = WKButtonCategroyDemoUITests;
+			productName = WKButtonCategroyDemoUITests;
+			productReference = EA5D04EE1FAAC66F00E31639 /* WKButtonCategroyDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5D04C21FAAC66F00E31639 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wangkun;
+				TargetAttributes = {
+					EA5D04C91FAAC66F00E31639 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					EA5D04E21FAAC66F00E31639 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA5D04C91FAAC66F00E31639;
+					};
+					EA5D04ED1FAAC66F00E31639 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA5D04C91FAAC66F00E31639;
+					};
+				};
+			};
+			buildConfigurationList = EA5D04C51FAAC66F00E31639 /* Build configuration list for PBXProject "WKButtonCategroyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA5D04C11FAAC66F00E31639;
+			productRefGroup = EA5D04CB1FAAC66F00E31639 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA5D04C91FAAC66F00E31639 /* WKButtonCategroyDemo */,
+				EA5D04E21FAAC66F00E31639 /* WKButtonCategroyDemoTests */,
+				EA5D04ED1FAAC66F00E31639 /* WKButtonCategroyDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5D04C81FAAC66F00E31639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D050E1FAAF7E600E31639 /* 7@2x.png in Resources */,
+				EA5D04DD1FAAC66F00E31639 /* LaunchScreen.storyboard in Resources */,
+				EA5D050F1FAAF7E600E31639 /* 7@3x.png in Resources */,
+				EA5D04DA1FAAC66F00E31639 /* Assets.xcassets in Resources */,
+				EA5D04D81FAAC66F00E31639 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D04E11FAAC66F00E31639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D04EC1FAAC66F00E31639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5D04C61FAAC66F00E31639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D05081FAAC6A400E31639 /* UIButton+WKPattern.m in Sources */,
+				EA5D04D51FAAC66F00E31639 /* ViewController.m in Sources */,
+				EA5D050A1FAAC6A400E31639 /* UIControl+PreventMutablieClick.m in Sources */,
+				EA5D04D21FAAC66F00E31639 /* AppDelegate.m in Sources */,
+				EA5D05091FAAC6A400E31639 /* UIButton+WKTouchDown.m in Sources */,
+				EA5D050B1FAAC6A400E31639 /* UIButton+AddCornerRadiusLayer.m in Sources */,
+				EA5D04CF1FAAC66F00E31639 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D04DF1FAAC66F00E31639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D04E81FAAC66F00E31639 /* WKButtonCategroyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D04EA1FAAC66F00E31639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D04F31FAAC66F00E31639 /* WKButtonCategroyDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA5D04E51FAAC66F00E31639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5D04C91FAAC66F00E31639 /* WKButtonCategroyDemo */;
+			targetProxy = EA5D04E41FAAC66F00E31639 /* PBXContainerItemProxy */;
+		};
+		EA5D04F01FAAC66F00E31639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5D04C91FAAC66F00E31639 /* WKButtonCategroyDemo */;
+			targetProxy = EA5D04EF1FAAC66F00E31639 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA5D04D61FAAC66F00E31639 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5D04D71FAAC66F00E31639 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA5D04DB1FAAC66F00E31639 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5D04DC1FAAC66F00E31639 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA5D04F51FAAC66F00E31639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5D04F61FAAC66F00E31639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA5D04F81FAAC66F00E31639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WKButtonCategroyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangkun.www.WKButtonCategroyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA5D04F91FAAC66F00E31639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WKButtonCategroyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangkun.www.WKButtonCategroyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA5D04FB1FAAC66F00E31639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WKButtonCategroyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangkun.www.WKButtonCategroyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKButtonCategroyDemo.app/WKButtonCategroyDemo";
+			};
+			name = Debug;
+		};
+		EA5D04FC1FAAC66F00E31639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WKButtonCategroyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangkun.www.WKButtonCategroyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKButtonCategroyDemo.app/WKButtonCategroyDemo";
+			};
+			name = Release;
+		};
+		EA5D04FE1FAAC66F00E31639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WKButtonCategroyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangkun.www.WKButtonCategroyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WKButtonCategroyDemo;
+			};
+			name = Debug;
+		};
+		EA5D04FF1FAAC66F00E31639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WKButtonCategroyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangkun.www.WKButtonCategroyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WKButtonCategroyDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5D04C51FAAC66F00E31639 /* Build configuration list for PBXProject "WKButtonCategroyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D04F51FAAC66F00E31639 /* Debug */,
+				EA5D04F61FAAC66F00E31639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5D04F71FAAC66F00E31639 /* Build configuration list for PBXNativeTarget "WKButtonCategroyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D04F81FAAC66F00E31639 /* Debug */,
+				EA5D04F91FAAC66F00E31639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5D04FA1FAAC66F00E31639 /* Build configuration list for PBXNativeTarget "WKButtonCategroyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D04FB1FAAC66F00E31639 /* Debug */,
+				EA5D04FC1FAAC66F00E31639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5D04FD1FAAC66F00E31639 /* Build configuration list for PBXNativeTarget "WKButtonCategroyDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D04FE1FAAC66F00E31639 /* Debug */,
+				EA5D04FF1FAAC66F00E31639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA5D04C21FAAC66F00E31639 /* Project object */;
+}
