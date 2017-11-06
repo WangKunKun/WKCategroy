@@ -77,9 +77,6 @@
                 }
             }
         }
-        
-        
-        
         for (UIViewController * tabSubVC in tabVC.viewControllers) {
             //先找了 这次就不找了
             if ([tabSubVC isEqual:tabVC.selectedViewController]) {
@@ -100,6 +97,30 @@
         }
     }
     return nil;
+}
+
++ (UIView *)getVisableView
+{
+    AppDelegate * delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    return [delegate getVisableView];
+}
+
+- (UIView *)getVisableView
+{
+    UIViewController * vc = [self getVisableVC];
+    while (vc.tabBarController) {
+        vc = vc.tabBarController;
+    }
+    while (vc.navigationController) {
+        vc = vc.navigationController;
+    }
+    while (vc.tabBarController) {
+        vc = vc.tabBarController;
+    }
+    while (vc.navigationController) {
+        vc = vc.navigationController;
+    }
+    return vc.view;
 }
 
 @end
